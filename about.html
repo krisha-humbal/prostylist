@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Mate+SC&family=Oxanium:wght@200..800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+      <!--Header Section Start-->
+      <section id="header">
+        <div class="w-full mx-auto pt-2">
+            <div class="grid grid-cols-6 gap-4 ">
+                <div class="ps-2">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+
+                <div class="col-span-4 menu ">
+                    <ul class="flex justify-center gap-8 p-2 font-semibold lg:visible md:invisible ">
+                        <li class="text-rose-300"><a href="home.html">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="service.html">SERVICES</a></li>
+                        <li><a href="">PAGES<i class="fi fi-rr-angle-small-down"></i></a>
+                            <div class="list bg-white absolute top-12 left-1/2 ps-5 pe-5 border">
+                                <ul class="pb-2 grid gap-y-2">
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">Pricing</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">TEAM</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">FAQ</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">404 PAGE</li>
+                                    </ul>
+    
+                            </div>
+                        </li>
+                        <li><a href="">BLOG<i class="fi fi-rr-angle-small-down"></i></a>
+                            <div class="list bg-white absolute top-12 right-40 ps-5 pe-5 border">
+                                <ul class="pb-2 grid gap-y-2">
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">BLOG</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">SINGLE POST</li>
+                                  
+                                    </ul>
+    
+                            </div>
+                        </li>
+                        <li><a href="contact.html">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                <div class="md:col-span-1 ">
+                    <ul class="flex justify-center gap-2 p-2 text-xl ">
+                        <li class="lg:visible xl:visible md:invisible sm:invisible "><a href=""><i
+                                    class="fi fi-rr-search"></i></a></li>
+                        <li><a href=""><i class="fi fi-rr-symbol"></i></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Header Section End-->
+
+
+    <!--Banner Section Start-->
+    <section class="Banner">
+        <div class="w-full pt-10 relative">
+            <div class="grid grid-cols-8">
+                <div class="col-span-2 bg-red-300 wg-300">
+                    <img src="img/black.jpeg" alt="">
+                </div>
+             
+                <div class="col-span-6  wg-700">
+                    <div class="b-img-container">
+                        <img src="img/ban2.jpg" alt="">
+                    </div>
+                    <script>
+                        const bg = document.querySelector('.b-img-container');
+                        const windowWidth = window.innerWidth / 1;
+                        const windowHeight = window.innerHeight / 1;
+
+                        bg.addEventListener('mousemove', (e) => {
+                            const mouseX = e.clientX / windowWidth;
+                            const mouseY = e.clientY / windowHeight;
+
+                            bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+                        });
+                    </script>
+                       <div class="white-data absolute bg-white ">
+                        <h1 class="ps-8">About</h1>
+                        <p class="ps-10 text-slate-500">Home <i class="fi fi-rr-horizontal-rule pe-2 text-red-300 "></i>About</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner Section Start-->
+
+    <!--About Section Start-->
+
+    <section class="About">
+        <div class="container flex flex-col items-center pt-32 about-data ">
+            <span class="text-red-300 text-xl teacking-wider">About Prostylist</span>
+            <h1 class="pt-10">Discover Your Authentic Style With Prostylist Makeup</h1>
+            <div class="abt-pera">
+                <p class="pt-5 text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitaead sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+            </div>
+            <div class="line"></div>
+           <div class="sign w-28 bg-white pt-10"> 
+            <img src="img/sign.webp" alt="">
+            </div>
+            <div class="sign-text w-58 ">
+                <h1>Cassavania Regina</h1>
+                <p class="text-center">CEO Prostylist</p>
+            </div>
+        </div>
+    </section>
+    <!--About Section End-->
+
+    <!--Banner Video Section Start -->
+
+    <section class="Banner-Video">
+        <div class="vd-container">
+            <div class="vd-img-con relative">
+                
+                
+                <div class="vd-mini-img1 ">
+                    <img src="img/b2m1.webp" alt="">
+                </div>
+                
+                <div class="vd-mini-img2">
+                    <img src="img/b2m2.webp" alt="">
+                </div>
+                
+                
+                <div class="vid w-40 pt-10 pb-40 flex flex-row absolute">
+                    
+                    <a id="play-video" class="video-play-button"
+                        href="https://youtu.be/MLpWrANjFbI?list=TLGG9m1lwPUk9SEyNzEwMjAyNA">
+                        <span></span>
+
+                    </a>
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            $('#play-video').on('click', function (e) {
+                e.preventDefault();
+                $('#video-overlay').addClass('open');
+                $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/wih7coKNL4Q" frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+            });
+
+            $('.video-overlay, .video-overlay-close').on('click', function (e) {
+                e.preventDefault();
+                close_video();
+            });
+
+            $(document).keyup(function (e) {
+                if (e.keyCode === 27) { close_video(); }
+            });
+
+            function close_video() {
+                $('.video-overlay.open').removeClass('open').find('iframe').remove();
+            };
+        </script>
+    </section>
+    <!--Banner Video Section End -->
+
+    <!--Number Section Start-->
+    <section class="Number">
+
+        <div class="w-full pt-36 mx-auto">
+            <div class="grid grid-cols-4">
+                <div class="col-span-1 ps-5 w-30 bg-white pt-5">
+                    <h1>100%</h1>
+                    <p class="text-slate-500">Customer Satisfaction</p>
+                </div>
+                <div class="col-span-1">
+                    <h1>250+ <p class="text-slate-500">Authentic Local Brand</p></h1>
+                   
+                </div>
+                <div class="col-span-1">
+                    <h1>97.2</h1>
+                    <p class="text-slate-500">Level A Rating Customer</p>
+                </div>
+                <div class="col-span-1">
+                    <h1>428+</h1>
+                    <p class="text-slate-500">Organic Makeup Product</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Number Section End-->
+
+    <!--Working Space Section Start-->
+    <section class="WorkSpace">
+        <div class="work-bg-container w-full pt-20 relative flex justify-center">
+            <img src="img/bg5.webp" alt="">
+            <div class="container  workSpace flex flex-col items-center">
+                <span class="">HOW WE WORKS</span>
+                <h1>Our Working Process</h1>
+                <div class="workIconContainer flex pt-20 ">
+                    <i class="fi fi-rr-lipstick text-rose-300 pe-5 ps-5"></i>
+                    <i class="fa-solid fa-arrow-right  pt-2 ps-10 pe-10 text-slate-500"></i>
+                    <i class="fi fi-rr-calendar-days text-rose-300 pe-5 ps-5"></i>
+                    <i class="fa-solid fa-arrow-right pt-2 ps-10 pe-10 text-slate-500"></i>
+                    <i class="fi fi-rr-credit-card text-rose-300 pe-5 ps-5"></i>
+                    <i class="fa-solid fa-arrow-right pt-2 ps-10 pe-10 text-slate-500"></i>
+                    <i class="fi fi-rr-flower-tulip text-rose-300 pe-5 ps-5"></i>
+                </div>
+
+                <div class="workDataContainer flex gap-10">
+                    <div class="div text-center ">
+                        <h1>Select Your Service</h1>
+                        <p class="pt-5 text-slate-500">Lorem ipsum dolor sit amet consecte.</p>
+                    </div>
+                    <div class="div text-center ">
+                        <h1>Booking & Confirm</h1>
+                        <p class="pt-5 text-slate-500">Lorem ipsum dolor sit amet consecte.</p>
+
+                    </div>
+                    <div class="div text-center">
+                        <h1>Booking Payment</h1>
+                        <p class="pt-5 text-slate-500">Lorem ipsum dolor sit amet consecte.</p>
+
+                    </div>
+                    <div class="div text-center ">
+                        <h1>Enjoy Your Service</h1>
+                        <p class="pt-5 text-slate-500">Lorem ipsum dolor sit amet consecte.</p>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--Working Space Section End-->
+
+    <!--Appointment Section Start-->
+    <section class="Appointment">
+    <div class="max-w-6xl mx-auto p-8 flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden font-sans">
+        <!-- Appointment Section -->
+        <div class="w-full md:w-1/2 bg-rose-100 p-8">
+            <h4 class="text-pink-600 text-sm uppercase font-semibold tracking-widest">Make Appointment</h4>
+            <h1 class="text-3xl font-bold text-gray-800 mt-4 font-sans">Get Our Service Easily</h1>
+            <p class="text-gray-600 mt-4 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore et dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco incididunt magna aliqua veniam quis nostrud minim veniam quis nostrud.</p>
+
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800">
+                <!-- Location -->
+                <div class="flex items-start">
+                    <span class="text-pink-600 text-2xl mr-4">📍</span>
+                    <div>
+                        <strong class="block font-semibold">Location</strong>
+                        <p>Hayam Wuruk Street PB.<br>1190 Badung, Bali</p>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="flex items-start">
+                    <span class="text-pink-600 text-2xl mr-4">✉️</span>
+                    <div>
+                        <strong class="block font-semibold">Email</strong>
+                        <p>prostylist@support.com<br>prostylist@domain.com</p>
+                    </div>
+                </div>
+                <!-- Phone -->
+                <div class="flex items-start">
+                    <span class="text-pink-600 text-2xl mr-4">📞</span>
+                    <div>
+                        <strong class="block font-semibold">Phone</strong>
+                        <p>+62 478-2240-190<br>(021) 123-56789</p>
+                    </div>
+                </div>
+                <!-- Work Hours -->
+                <div class="flex items-start">
+                    <span class="text-pink-600 text-2xl mr-4">🕒</span>
+                    <div>
+                        <strong class="block font-semibold">Work Hours</strong>
+                        <p>Everyday 08:00 AM - 18:00 PM<br>Sun: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="w-full md:w-1/2 bg-white p-8">
+            <h2 class="text-2xl font-semibold text-gray-800">Booking Form</h2>
+            <p class="text-gray-600 mt-2 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <form class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded">
+                    <input type="text" placeholder="Your Phone" class="w-full p-3 border border-gray-300 rounded">
+                </div>
+                <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded">
+                <input type="date" class="w-full p-3 border border-gray-300 rounded">
+                <select class="w-full p-3 border border-gray-300 rounded ">
+                    <option>Select Your Service</option>
+                    <option>Wedding & Evnts</option>
+                    <option>Real Estate Photo</option>
+                    <option>Agriculture Viewing</option>
+                    <option>Sports & Music</option>
+
+                </select>
+                <textarea placeholder="Your Request" class="w-full p-3 border border-gray-300 rounded h-32"></textarea>
+                <button type="submit" class="w-full bg-red-300 text-white py-3 rounded font-semibold hover: transition">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+    <!--Appointment Section End-->
+
+    <!--Quote Section Start-->
+        <section class="Quote">
+          <div class="w-full relative">
+            <img src="img/bg6.webp" alt="">
+            <div class="quote-sec flex flex-col items-center">
+                <span class="pt-28">SOME QUOTES</span>
+               <div class="qu-con flex pt-20">
+                <h1>“Creativity Is Your Best Makeup Skill, Don’t Be Afraid To Experiment.”</h1>
+               </div>
+               <div class="line"></div>
+               <h1 class="pt-20 pb-40">Joëlle Bonnay</h1>
+            </div>
+          </div>  
+
+        </section>
+
+    <!--Quote Section End-->
+
+    <!--Team Section Start-->
+    <section class="Team">
+        
+        <div class="max-w-7xl mx-auto p-8 flex flex-col md:flex-row shadow-lg rounded-lg pt-32 relative ">
+            <!-- Left Section: Team Info and Skills -->
+            <div class="w-full md:w-1/2 p-8">
+                <h4 class="text-red-300 text-sm uppercase font-semibold tracking-widest">Meet Our Team</h4>
+                <h1 class="text-3xl font-bold text-gray-800 mt-4">Our Professional Team</h1>
+                <p class="text-gray-600 mt-4 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore et dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco incididunt magna aliqua veniam quis nostrud minim veniam quis nostrud.</p>
+                
+                <!-- Skills Section -->
+                <div class="mt-8 space-y-4">
+                    <!-- Wedding Makeup Skill Bar -->
+                    <div>
+                        <p class="text-gray-800 font-semibold mb-1">Wedding Makeup   </p>
+                        <div class="absolute w-full bg-gray-200 h-2 rounded-full">
+                            <div class="absolute top-0 left-0 h-2  rounded-full" style="width: 87%; " id="tracking"></div>
+                            <span class="absolute top-0 right-0 text-sm font-semibold bg-black text-white rounded-full px-2 py-0.5 -mt-3 -mr-3"></span>
+                        </div>
+                    </div>
+                    <!-- Natural Makeup Skill Bar -->
+                    <div>
+                        <p class="text-gray-800 font-semibold mb-1">Natural Makeup</p>
+                        <div class="relative w-full bg-gray-200 h-2 rounded-full">
+                            <div class="absolute top-0 left-0 h-2  rounded-full" style="width: 96%;" id="tracking"></div>
+                            <span class="absolute top-0 right-0 text-sm font-semibold bg-black text-white rounded-full px-2 py-0.5 -mt-3 -mr-3"></span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Stats Section -->
+                <div class="flex pt-10 space-x-8">
+                    <div class=" flex">
+                        <i class="fa-solid fa-bag-shopping text-4xl text-red-300"></i>
+                        <div class="text-black text-4xl font-bold ps-4">975+<p class="text-gray-600 text-xl ">Makeup Project</p></div>
+                        
+                    </div>
+                    <div class=" flex">
+                        <i class="fa-solid fa-arrow-up-right-dots text-4xl text-red-300"></i>
+                        <div class="text-black text-4xl font-bold ps-4">48+ <p class="text-gray-600 text-xl">Years Experience</p></div>
+                       
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Section: Profile Card and Team Image -->
+            <div class="w-full relative md:w-1/2 flex  items-center justify-center p-8 gap-5  pb-44">
+                <!-- Profile Card -->
+                <div class="absolute left-4 top-8 w-64  rounded-lg  shadow-lg mb-6 team-img">
+                    <img src="img/p1.webp" alt="Team Member" class="w-full h-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-between p-4 overlay-data">
+                     
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="w-8 h-8 bg-white text-red-300 rounded-full flex items-center justify-center hover:text-white hover:bg-red-300"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="w-8 h-8 bg-white text-red-300 rounded-full flex items-center justify-center hover:text-white hover:bg-red-300"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="w-8 h-8 bg-white text-red-300 rounded-full flex items-center justify-center hover:text-white hover:bg-red-300"><i class="fa-brands fa-pinterest"></i><a>
+                        </div>
+                      
+                        <div>
+                            <h4 class="font-semibold text-white">Marthe Faure</h4>
+                            <p class="text-sm text-white">Makeup Artist</p>
+                        </div>
+                    </div>
+                </div>
+    
+              
+                <div class="absolute  top-0 right-4 w-64  rounded-lg  shadow-lg mb-6 team-img">
+                    <img src="img/p2.webp" alt="Team Member" class="w-full h-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-between p-4 overlay-data">
+                     
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="w-8 h-8 bg-white text-red-300 rounded-full flex items-center justify-center hover:text-white hover:bg-red-300"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="w-8 h-8 bg-white text-red-300 rounded-full flex items-center justify-center hover:text-white hover:bg-red-300"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="w-8 h-8 bg-white text-red-300 rounded-full flex items-center justify-center hover:text-white hover:bg-red-300"><i class="fa-brands fa-pinterest"></i><a>
+                        </div>
+                      
+                        <div>
+                            <h4 class="font-semibold text-white">Marthe Faure</h4>
+                            <p class="text-sm text-white">Makeup Artist</p>
+                        </div>
+                    
+
+                    </div>
+                </div>
+             
+
+              <button class="relative top-60 left-20  transform -translate-x-1/2 bg-white text-black border border-red-200 px-8 py-2 rounded  hover:bg-red-200 hover:text-white transition">All Team</button>
+    
+      
+            </div>
+        </div>
+    </section>
+<!--Team Section End-->
+
+  <!--Footer Section Start-->
+  <section class="Footer">
+
+    <div class="w-full relative pt-40">
+        <div class="footer-img flex">
+       
+            <div class="links text-white">
+                <h1>Quick Links</h1>
+                <ul class="pt-5 grid gap-y-5">
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>About</li>
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Services</li>
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Blog</li>
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>contact</li>
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Pricing</li>
+
+
+                </ul>
+            </div>
+
+            <div class="links text-white">
+                <h1>Support</h1>
+                <ul class="pt-5 grid gap-y-5">
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Privacy Policy</li>
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Support</li>
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Disclimer</li>
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>FAQ</li>
+                   <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="pel">
+                <div class="con-sec flex">
+                    <i class="fa-solid fa-phone text-2xl text-red-300 "></i>
+                    <div class="con-data text-white">
+                        <h1>Phone</h1>
+                    <p class="text-slate-500">+62 478-2240-190 | (021) 123-56789</p>
+                    </div>
+                </div>
+                <div class="con-sec flex">
+                    <i class="fa-regular fa-envelope text-2xl text-red-300"></i>
+                    <div class="con-data text-white">
+                        <h1>Email</h1>
+                    <p class="text-slate-500">prostylist@support.com</p>
+                    </div>
+                </div>
+                <div class="con-sec flex">
+                    <i class="fa-solid fa-location-dot text-2xl text-red-300"></i>
+                    <div class="con-data text-white">
+                        <h1>Location</h1>
+                    <p class="text-slate-500">Hayam Wuruk Street PB. 1190 Badung, Bali</p>
+                    </div>
+                </div>
+            </div>
+                <div class="cpy-right">
+             <p >© Copyright 2024 Profecient by <span class="text-red-300"> Jegtheme.</span> All rights reserved.</p>
+
+                </div>
+            </div>
+    <div class="contact flex flex-col justify-center pb-20 ps-5 pe-5 pt-20">
+        <div class="logo-sec1 flex flex-col self-center">
+        <img src="img/logo.jpg" alt="">
+        </div>
+        <p class="text-center pt-5 text-slate-500">Sed ut perspiciatis unde omnis iste natus delavirot voluptatem accusantium doloremque laudanti totam delavirot. </p>
+        <div class="con-logo flex self-center pt-10">
+            <ul class="flex ">
+                <li class="pe-2"><i class="fa-brands fa-facebook"></i></li>
+                <li class="pe-2"><i class="fa-brands fa-instagram"></i></li>
+                <li class="pe-2"><i class="fa-brands fa-whatsapp"></i></li>
+                <li class="pe-2"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+    </div>
+ 
+</section>
+<!--Footer Section End-->
+</body>
+</html>

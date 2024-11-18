@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.b-img-containers img{
+    width: 100%;
+    /* height: 90vh; */
+}
+.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 67%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #fa183d; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: darkgrey;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: darkgray;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: #DF9F9F;
+  }
+  .video-play-button:before {
+    content: "";
+    color: gray;
+    /* position: absolute; */
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: gray;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button img {
+    /* position: relative; */
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  .video-overlay {
+    /* position: fixed; */
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.80);
+    opacity: 0;
+    transition: all ease 500ms;
+  }
+  
+  .video-overlay.open {
+    /* position: fixed; */
+    z-index: 1000;
+    opacity: 1;
+    top:500px;
+  }
+  
+  .video-overlay-close {
+    /* position: absolute; */
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #f1ad34;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  
+  .video-overlay-close:hover {
+    color: #ff4c60;
+    transform: scale(1.5);
+  }
+  
+  
+  /* ENTRANCE ANIMATION OF THE PLAY BUTTON */
+  
+  .video-play-button {
+      -webkit-animation: scale-up-center 1s cubic-bezier(0.680, -0.550, 0.280, 1.550) both;
+              animation: scale-up-center 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  .faqs h1{
+    font-family: "Arima";
+    word-spacing: 0.1cap;
+    padding-left: 20px;
+
+  }
+  .faqs span{
+    color: #DF9F9F;
+    letter-spacing: 0.3cap;
+    text-align: left;
+    padding-left: 20px;
+
+  }
+  .faqs p{
+    word-spacing: 0.3cap;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .question{
+    background-color: #DF9F9F;
+    width: 470px;
+    padding: 35px;
+    margin-left: 10px;
+  }
+  .question p{
+    color: white;
+    font-size: 20px;
+  }
+  .text-con{
+    width: 400px;
+    text-align: center;
+    /* background-color:aqua; */
+    padding-top: 20px;
+
+  }
+  .questions-container{
+    width: 470px;
+    /* background-color: chartreuse; */
+    text-align: center;
+  }

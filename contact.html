@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Mate+SC&family=Oxanium:wght@200..800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!--Header Section Start-->
+    <section id="header">
+        <div class="w-full mx-auto pt-2">
+            <div class="grid grid-cols-6 gap-4 ">
+                <div class="ps-2">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+
+                <div class="col-span-4 menu ">
+                    <ul class="flex justify-center gap-8 p-2 font-semibold lg:visible md:invisible ">
+                        <li class="text-rose-300"><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="service.html">SERVICES</a></li>
+                        <li><a href="">PAGES<i class="fi fi-rr-angle-small-down"></i></a>
+                            <div class="list bg-white absolute top-12 left-1/2 ps-5 pe-5 border">
+                                <ul class="pb-2 grid gap-y-2">
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">Pricing</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">TEAM</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">FAQ</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">404 PAGE</li>
+                                    </ul>
+    
+                            </div>
+                        </li>
+                        <li><a href="">BLOG<i class="fi fi-rr-angle-small-down"></i></a>
+                            <div class="list bg-white absolute top-12 right-40 ps-5 pe-5 border">
+                                <ul class="pb-2 grid gap-y-2">
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">BLOG</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">SINGLE POST</li>
+                                  
+                                    </ul>
+    
+                            </div>
+                        </li>
+                        <li><a href="">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                <div class="md:col-span-1 ">
+                    <ul class="flex justify-center gap-2 p-2 text-xl ">
+                        <li class="lg:visible xl:visible md:invisible sm:invisible "><a href=""><i
+                                    class="fi fi-rr-search"></i></a></li>
+                        <li><a href=""><i class="fi fi-rr-symbol"></i></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Header Section End-->
+
+    <!--Banner Section Start-->
+    <section class="Banner">
+        <div class="w-full pt-10">
+            <div class="grid grid-cols-8">
+                <div class="col-span-2 bg-red-300 wg-300">
+                    <img src="img/black.jpeg" alt="">
+                </div>
+
+                <div class="col-span-6  wg-700s">
+                    <div class="b-img-containers">
+                        <img src="img/banner4.webp" alt="" class="w-full">
+
+                    </div>
+
+                    <div class="white-data absolute bg-white ">
+                        <h1 class="ps-8">Contact</h1>
+                        <p class="ps-10 text-slate-500">Contact<i
+                                class="fi fi-rr-horizontal-rule pe-2 text-red-300 "></i>Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner Section End-->
+
+    <!--Review Section Start-->
+    <section class="Review">
+        <div class="w-full flex justify-center pt-20 relative pb-40">
+            <div class="img-review-container">
+                <img src="img/review.webp" alt="">
+            </div>
+
+            <div class="w-full max-w-lg ps-5 bg-white rounded shadow-md relative right-28 top-10 ">
+
+                <form>
+                    <!-- Name Field -->
+                    <div class="data-container flex flex-col">
+                        <span>Give A Review</span>
+                        <h1>Leave A Message</h1>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+                            feugiat purus. Duis turpis nunc aliquam.</p>
+                    </div>
+                    <div class="mb-4 pt-10 pe-20">
+                        <label for="name" class="block mb-1 text-gray-700">Name</label>
+                        <input type="text" id="name"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                            placeholder="Enter your name" required>
+                    </div>
+
+                    <!-- Phone Field -->
+                    <div class="mb-4 pe-20">
+                        <label for="phone" class="block mb-1 text-gray-700">Phone</label>
+                        <input type="tel" id="phone"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                            placeholder="Enter your phone number" required>
+                    </div>
+
+                    <!-- Subject Field -->
+                    <div class="mb-4 pe-20">
+                        <label for="subject" class="block mb-1 text-gray-700">Subject</label>
+                        <input type="text" id="subject"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                            placeholder="Enter the subject" required>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="mb-4 pe-20">
+                        <label for="message" class="block mb-1 text-gray-700">Message</label>
+                        <textarea id="message" rows="4"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                            placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit"
+                            class=" px-4 py-2 mb-5 text-white bg-red-300 rounded  focus:outline-none focus:ring-2 focus:ring-red-200">SEND
+                            MESSAGE<i class="fi fi-rr-horizontal-rule "></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Review Section End-->
+
+
+    <!--Contact Section Start-->
+    <section class="Contact-Sec">
+        <div class="w-full flex gap-5">
+            <div class="contact-info flex flex-col pb-10 ms-5">
+                <h1 class="ps-10 pt-10">Contact Info</h1>
+                <div class="loc ps-10 pt-10 flex gap-4">
+                    <i class="fi fi-rr-marker text-red-300 text-xl"></i>
+                    <p class="pe-20 text-slate-500">Hayam Wuruk Street PB. 1190 Badung, Bali</p>
+                </div>
+                <div class="phone ps-10 pt-10 flex gap-4">
+                    <i class="fi fi-rr-phone-call text-red-300 text-xl"></i>
+                    <p class="text-slate-500">+62 478-2240-190</p>
+                </div>
+                <div class="mail ps-10 pt-10 flex gap-4 ">
+                    <i class="fi fi-rr-envelope text-red-300 text-xl"></i>
+                    <p class="text-slate-500">prostylist@support.com</p>
+                </div>
+                <div class="time  pt-10 flex gap-4 ">
+                    <i class="fi fi-rr-clock-five text-red-300 text-xl"></i>
+                    <p class="text-slate-500">Everyday 08:00 AM - 18:00 PM</p>
+                </div>
+            </div>
+            <div class="connected shadow-xl flex flex-col">
+                <h1 class="ps-10 pt-10">Stay Connected</h1>
+                <p class="p-10 text-slate-500">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor
+                    incididunt utlabore</p>
+                <div class="div-icon flex justify-center gap-10">
+                    <div class="face-book flex  w-30 gap-5 bg-white">
+                        <i class="fa-brands fa-facebook mt-1 text-red-300"></i>
+                        <p>Face Book</p>
+                    </div>
+                    <div class="twitter flex  w-30 gap-5 bg-white">
+                        <i class="fa-brands fa-twitter mt-1 text-red-300"></i>
+                        <p>Twitter</p>
+                    </div>
+                </div>
+                <div class="div-icon flex justify-center gap-10 pt-5 ">
+                    <div class="face-book flex  w-30 gap-5 bg-white">
+                        <i class="fa-brands fa-instagram mt-1 text-red-300"></i>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="twitter flex  w-30 gap-5 bg-white">
+                        <i class="fa-brands fa-youtube mt-1 text-red-300"></i>
+                        <p>youtube</p>
+                    </div>
+                </div>
+            </div>
+            <div class="location ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7933.618196289304!2d106.818845!3d-6.156317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f607229049d1%3A0x293d2c1b038ab0cb!2sHayam%20Wuruk%20St%20No.1%2C%20RT.14%2FRW.1%2C%20Mangga%20Besar%2C%20Taman%20Sari%2C%20West%20Jakarta%20City%2C%20Jakarta%2011110%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1731496617386!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section End-->
+
+    <!--Footer Section Start-->
+    <section class="Footer">
+
+        <div class="w-full relative pt-40">
+            <div class="footer-img flex">
+           
+                <div class="links text-white">
+                    <h1>Quick Links</h1>
+                    <ul class="pt-5 grid gap-y-5">
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>About</li>
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Services</li>
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Blog</li>
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>contact</li>
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Pricing</li>
+
+
+                    </ul>
+                </div>
+
+                <div class="links text-white">
+                    <h1>Support</h1>
+                    <ul class="pt-5 grid gap-y-5">
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Privacy Policy</li>
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Support</li>
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Disclimer</li>
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>FAQ</li>
+                       <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div class="pel">
+                    <div class="con-sec flex">
+                        <i class="fa-solid fa-phone text-2xl text-red-300 "></i>
+                        <div class="con-data text-white">
+                            <h1>Phone</h1>
+                        <p class="text-slate-500">+62 478-2240-190 | (021) 123-56789</p>
+                        </div>
+                    </div>
+                    <div class="con-sec flex">
+                        <i class="fa-regular fa-envelope text-2xl text-red-300"></i>
+                        <div class="con-data text-white">
+                            <h1>Email</h1>
+                        <p class="text-slate-500">prostylist@support.com</p>
+                        </div>
+                    </div>
+                    <div class="con-sec flex">
+                        <i class="fa-solid fa-location-dot text-2xl text-red-300"></i>
+                        <div class="con-data text-white">
+                            <h1>Location</h1>
+                        <p class="text-slate-500">Hayam Wuruk Street PB. 1190 Badung, Bali</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="cpy-right">
+                 <p >© Copyright 2024 Profecient by <span class="text-red-300"> Jegtheme.</span> All rights reserved.</p>
+
+                    </div>
+                </div>
+        <div class="contact flex flex-col justify-center pb-20 ps-5 pe-5 pt-10">
+            <div class="logo-sec1 flex flex-col self-center ">
+            <img src="img/logo.jpg" alt="">
+            </div>
+            <p class="text-center pt-5 text-slate-500">Sed ut perspiciatis unde omnis iste natus delavirot voluptatem accusantium doloremque laudanti totam delavirot. </p>
+            <div class="con-logo flex self-center pt-10">
+                <ul class="flex ">
+                    <li class="pe-2"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="pe-2"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="pe-2"><i class="fa-brands fa-whatsapp"></i></li>
+                    <li class="pe-2"><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+            </div>
+        </div>
+     
+    </section>
+    <!--Footer Section End-->
+
+
+</body>
+</html>

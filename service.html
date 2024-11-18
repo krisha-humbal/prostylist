@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Mate+SC&family=Oxanium:wght@200..800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        .disc{
+          width: 400px;
+          position:relative;
+          /* padding: 30px; */
+          left: 66%;
+          height: 100vh;
+          bottom: 80px;
+          background-color:#f4e9e9;
+
+        }
+        .card{
+          width: 250px;
+      
+        }
+        .card span,.card button{
+          color: #DF9F9F;
+    font-family: "Arima";
+
+        }
+        .card h3{
+          color: black;
+    font-family: "Arima";
+
+        }
+        .hori-line{
+          width: 1px;
+          height: 100px;
+          margin-bottom: 10px;
+          background-color: #DF9F9F;
+          
+        }
+      </style>
+</head>
+<body>
+       <!--Header Section Start-->
+       <section id="header">
+        <div class="w-full mx-auto pt-2">
+            <div class="grid grid-cols-6 gap-4 ">
+                <div class="ps-2">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+
+                <div class="col-span-4 menu ">
+                    <ul class="flex justify-center gap-8 p-2 font-semibold lg:visible md:invisible ">
+                        <li class="text-rose-300"><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">PAGES<i class="fi fi-rr-angle-small-down"></i></a>
+                            <div class="list bg-white absolute top-12 left-1/2 ps-5 pe-5 border">
+                                <ul class="pb-2 grid gap-y-2">
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">Pricing</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">TEAM</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">FAQ</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">404 PAGE</li>
+                                    </ul>
+    
+                            </div>
+                        </li>
+                        <li><a href="">BLOG<i class="fi fi-rr-angle-small-down"></i></a>
+                            <div class="list bg-white absolute top-12 right-40 ps-5 pe-5 border">
+                                <ul class="pb-2 grid gap-y-2">
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">BLOG</li>
+                                    <li class="hover:border border-black-200 ps-2 relative hover:bg-red-300">SINGLE POST</li>
+                                  
+                                    </ul>
+    
+                            </div>
+                        </li>
+                        <li><a href="contact.html">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                <div class="md:col-span-1 ">
+                    <ul class="flex justify-center gap-2 p-2 text-xl ">
+                        <li class="lg:visible xl:visible md:invisible sm:invisible "><a href=""><i
+                                    class="fi fi-rr-search"></i></a></li>
+                        <li><a href=""><i class="fi fi-rr-symbol"></i></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Header Section End-->
+
+     <!--Banner Section Start-->
+     <section class="Banner">
+        <div class="w-full pt-10">
+            <div class="grid grid-cols-8">
+                <div class="col-span-2 bg-red-300 wg-300">
+                    <img src="img/black.jpeg" alt="">
+                </div>
+             
+                <div class="col-span-6  wg-700s">
+                    <div class="b-img-containers">
+                        <img src="img/ban3.jpg" alt="" class="w-full">
+
+                    </div>
+               
+                       <div class="white-data absolute bg-white ">
+                        <h1 class="ps-8">Service</h1>
+                        <p class="ps-10 text-slate-500">Home <i class="fi fi-rr-horizontal-rule pe-2 text-red-300 "></i>Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner Section End-->
+
+      <!--Collection Section Start-->
+      <section id="Collection">
+        <div class="container1 pt-20">
+            <div class="grid grid-cols-4 bg-white">
+                <div class="col-span-1 flex flex-col">
+                    <span class="ps-3 text-rose-300 font-bold pt-24 ">New Collection</span>
+                    <h1 class="text-6xl ps-3 pt-5 hhead">Uniqueness & Current Makeup Trends</h1>
+                    <p class="ps-3 tracking-wider text-slate-500">Lorem ipsum dolor sit amet consecte turadipiscing elit
+                        sed do eiusmodte porincididunt ut laboreua</p>
+                    <a href="" class="ps-3 pt-5 text-rose-300 hover:text-black">
+                        <p>VIEW MORE <i class="fi fi-rr-horizontal-rule "></i></p>
+                    </a>
+                </div>
+                <div class="col-span-1 flex flex-col ">
+                    <div class="img-conn  pt-10 ps-12">
+                        <img src="img/img1.webp" alt="" class="h-auto w-full ">
+                    </div>
+                    <div class="data pt-10 ps-10">
+                        <span class="text-rose-300 ">$23/Service</span>
+                        <h1 class="text-xl font-bold pt-5">The ‘80s is Back!</h1>
+                        <p class="pt-5">Eiusmodte porincididunt ut labor. Suspendisse inmagna inelit.</p>
+                        <a href="" class="ps-3 pt-5 text-rose-300 hover:text-black">
+                            <p>BOOK NOW <i class="fi fi-rr-horizontal-rule "></i></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="img-conn pt-10 ps-12">
+                        <img src="img/img2.webp" alt="" class="h-auto w-full    ">
+                    </div>
+                    <div class="data pt-10 ps-10">
+                        <span class="text-rose-300 ">$23/Service</span>
+                        <h1 class="text-xl font-bold pt-5">The ‘80s is Back!</h1>
+                        <p class="pt-5">Eiusmodte porincididunt ut labor. Suspendisse inmagna inelit.</p>
+                        <a href="" class="ps-3 pt-5 text-rose-300 hover:text-black">
+                            <p>BOOK NOW <i class="fi fi-rr-horizontal-rule "></i></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="img-conn  pt-10 ps-12 pe-2">
+                        <img src="img/img3.webp" alt="" class="h-auto w-full    ">
+                    </div>
+                    <div class="data pt-12 ps-10">
+                        <span class="text-rose-300 ">$23/Service</span>
+                        <h1 class="text-xl font-bold pt-5">The ‘80s is Back!</h1>
+                        <p class="pt-5">Eiusmodte porincididunt ut labor. Suspendisse inmagna inelit.</p>
+                        <a href="" class="ps-3 pt-5 text-rose-300 hover:text-black">
+                            <p>BOOK NOW <i class="fi fi-rr-horizontal-rule "></i></p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--Collection Section End-->
+
+    <section class="collection2">
+        <div class="w-full mx-auto flex gap-5 p-6 ">
+            <div class=" p-20 rounded-lg shadow-lg  text-center flex flex-col items-center justify-center disc">
+              <h2 class="text-2xl font-semibold ">Get 30% Discount For First Customer</h2>
+              <p class="text-gray-500 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+              <div class="hori-line"></div>
+              <button class="border border-gray-700 px-6 py-2  font-semibold text-gray-700 text-sm hover:bg-red-300 hover:text-white hover:border-red-300 transition">MAKE APPOINTMENT</button>
+          </div>
+              <!-- Service Cards -->
+              <div class="flex   gap-8 absolute left-10 top-10" >
+                  <!-- Card 1 -->
+                  <div class="bg-white  text-center card">
+                      <img src="img/img5.webp" alt="Radiant Glow" class="w-full h-72 object-cover  mb-4">
+                      <span class="text-pink-600 text-sm font-medium mb-1">$25/Service</p>
+                      <h3 class="text-xl font-semibold mb-2">Radiant Glow</h3>
+                      <p class="text-gray-500 text-sm mb-4">Eiusmodte porincididunt ut labor. Suspendisse inmagna inelit.</p>
+                      <button class="text-pink-600 font-semibold text-sm pb-5">BOOK NOW</button>
+                  </div>
+      
+                  <!-- Card 2 -->
+                  <div class="bg-white text-center card">
+                      <img src="img/img6.webp" alt="Bold & Vintage" class="w-full h-72 object-cover  mb-4">
+                      <span class="text-pink-600 text-sm font-medium mb-1">$28/Service</p>
+                      <h3 class="text-xl font-semibold mb-2">Bold & Vintage</h3>
+                      <p class="text-gray-500 text-sm mb-4">Eiusmodte porincididunt ut labor. Suspendisse inmagna inelit.</p>
+                      <button class="text-pink-600 font-semibold text-sm">BOOK NOW</button>
+                  </div>
+      
+                  <!-- Card 3 -->
+                  <div class="bg-white  text-center relative absolute card">
+                      <img src="img/img7.webp" alt="Nostalgic Makeup" class="w-full h-72 object-cover  mb-4">
+                      <span class="text-pink-600 text-sm font-medium mb-1">$34/Service</p>
+                      <h3 class="text-xl font-semibold mb-2">Nostalgic Makeup</h3>
+                      <p class="text-gray-500 text-sm mb-4">Eiusmodte porincididunt ut labor. Suspendisse inmagna inelit.</p>
+                      <button class="text-pink-600 font-semibold text-sm">BOOK NOW</button>
+                  </div>
+              </div>
+      
+              <!-- Discount Section -->
+              
+      
+          </div>
+    </section>
+      <!--Logo Section Start-->
+      <section class="Logo-sec">
+        <div class="w-full flex pt-32 mx-auto justify-center">
+         <div class="grid grid-cols-6 gap-10 logo-sec">
+            <div class="col-span-1  w-36"><img src="img/l1.webp" alt=""></div>
+            <div class="col-span-1  w-36"><img src="img/l2.webp" alt=""></div>
+            <div class="col-span-1  w-36"><img src="img/l3.webp" alt=""></div>
+            <div class="col-span-1  w-36"><img src="img/l4.webp" alt=""></div>
+            <div class="col-span-1  w-36" ><img src="img/l5.webp" alt=""></div>
+            <div class="col-span-1  w-36"><img src="img/l6.webp" alt=""></div>
+
+         </div>
+
+        </div>
+    </section>
+
+    <!--Logo Section Start-->
+     <!--Course Section Start-->
+
+     <section class="Course">
+        <div class="w-full main-sec pb-40 overflow-hidden relative pt-52">
+            <div class="sec-back" id="sec-back">
+                <img src="img/bg1.webp" alt="" >
+                <div class="course flex flex-col pe-20 absolute">
+                    <h1 class="tracking-wider text-red-300 text-xl pt-20">New Service Offer</h1>
+                    <span class="pt-5">Makeup Artistry Courses</span>
+                    <p class="text-slate-500">Price : 35$/Course &nbsp; &nbsp;
+                        Duration : 3 Hours 30 Minutes</p>
+                    <p class="text-slate-500 pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+                        feugiat purus. Duis turpis nunc, aliquam id nuncac convallis dictum nisi. Curabitur vehicula
+                        tincidunt sapien velcac. Donec diam augue consequat sit amet metus ac bibendum mattis massa.
+                    </p>
+                    <div class="vid w-40 pt-10 pb-40 flex flex-row">
+                        <img src="img/vimg.webp" alt="">
+                        <a id="play-video" class="video-play-button"
+                            href="https://youtu.be/MLpWrANjFbI?list=TLGG9m1lwPUk9SEyNzEwMjAyNA">
+                            <span></span>
+
+                        </a>
+                        <div id="video-overlay" class="video-overlay">
+                            <a class="video-overlay-close">&times;</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            const bg = document.querySelector('.sec-back');
+            const windowWidth = window.innerWidth / 1;
+            const windowHeight = window.innerHeight / 1;
+
+            bg.addEventListener('mousemove', (e) => {
+                const mouseX = e.clientX / windowWidth;
+                const mouseY = e.clientY / windowHeight;
+
+                bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+            });
+        </script>
+        <script>
+
+            $('#play-video').on('click', function (e) {
+                e.preventDefault();
+                $('#video-overlay').addClass('open');
+                $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/wih7coKNL4Q" frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+            });
+
+            $('.video-overlay, .video-overlay-close').on('click', function (e) {
+                e.preventDefault();
+                close_video();
+            });
+
+            $(document).keyup(function (e) {
+                if (e.keyCode === 27) { close_video(); }
+            });
+
+            function close_video() {
+                $('.video-overlay.open').removeClass('open').find('iframe').remove();
+            };
+        </script>
+
+    </section>
+
+    <!--Course Section End-->
+
+    <!--Client Section Start-->
+    <section class="Client">
+        <div class="container relative">
+            <div class="grid grid-cols-2">
+                <div class="col-span-1 bg-red-500">
+                    <img src="img/client.webp" alt="">
+                </div>
+                <div class="col-span-1  absolute left-1/2 faqs flex flex-col pb-20 shadow-lg">
+                   <span>FAQ</span>
+                   <h1 class="text-4xl pt-10">Our Clients Questions</h1>
+                   <p class="text-slate-500 pt-5 pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore.</p>
+                   <div class="question-container flex flex-col self-center pb-20">
+                    <div class="question ">
+                        <p><i class="fi fi-rr-horizontal-rule pe-2"></i>What are the requirement for the service ?</p>
+                   </div>
+                   <div class="text-container flex justify-center">
+                    <div class="text-con">
+                        <p class="pt-10 text-slate-500">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massaum socis.</p>
+                       </div>
+                   </div>
+                   </div>
+                   <div class="questions-container flex flex-col self-cente gap-5 pt-5">
+
+                    <div class="question-1 white p-4 ms-5 shadow-md">
+                        <h1 class="text-xl"> + What the transfer process to get service ?</h1>
+                    </div> 
+                    <div class="question-1 white p-4 ms-5 shadow-md">
+                        <h1 class="text-xl"> + What the transfer process to get service ?</h1>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Client Section End-->
+
+        <!--Footer Section Start-->
+        <section class="Footer">
+
+            <div class="w-full relative pt-28">
+                <div class="footer-img flex">
+               
+                    <div class="links text-white">
+                        <h1>Quick Links</h1>
+                        <ul class="pt-5 grid gap-y-5">
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>About</li>
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Services</li>
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Blog</li>
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>contact</li>
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Pricing</li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="links text-white">
+                        <h1>Support</h1>
+                        <ul class="pt-5 grid gap-y-5">
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Privacy Policy</li>
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Support</li>
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Disclimer</li>
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>FAQ</li>
+                           <li><i class="fi fi-rr-horizontal-rule pe-5 text-red-300"></i>Terms & Conditions</li>
+                        </ul>
+                    </div>
+                    <div class="pel">
+                        <div class="con-sec flex">
+                            <i class="fa-solid fa-phone text-2xl text-red-300 "></i>
+                            <div class="con-data text-white">
+                                <h1>Phone</h1>
+                            <p class="text-slate-500">+62 478-2240-190 | (021) 123-56789</p>
+                            </div>
+                        </div>
+                        <div class="con-sec flex">
+                            <i class="fa-regular fa-envelope text-2xl text-red-300"></i>
+                            <div class="con-data text-white">
+                                <h1>Email</h1>
+                            <p class="text-slate-500">prostylist@support.com</p>
+                            </div>
+                        </div>
+                        <div class="con-sec flex">
+                            <i class="fa-solid fa-location-dot text-2xl text-red-300"></i>
+                            <div class="con-data text-white">
+                                <h1>Location</h1>
+                            <p class="text-slate-500">Hayam Wuruk Street PB. 1190 Badung, Bali</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="cpy-right">
+                     <p >© Copyright 2024 Profecient by <span class="text-red-300"> Jegtheme.</span> All rights reserved.</p>
+
+                        </div>
+                    </div>
+            <div class="contact flex flex-col justify-center pb-20 ps-5 pe-5 pt-10">
+                <div class="logo-sec1 flex flex-col self-center ">
+                <img src="img/logo.jpg" alt="">
+                </div>
+                <p class="text-center pt-5 text-slate-500">Sed ut perspiciatis unde omnis iste natus delavirot voluptatem accusantium doloremque laudanti totam delavirot. </p>
+                <div class="con-logo flex self-center pt-10">
+                    <ul class="flex ">
+                        <li class="pe-2"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="pe-2"><i class="fa-brands fa-instagram"></i></li>
+                        <li class="pe-2"><i class="fa-brands fa-whatsapp"></i></li>
+                        <li class="pe-2"><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+         
+        </section>
+    <!--Footer Section End-->
+
+</body>
+</html>

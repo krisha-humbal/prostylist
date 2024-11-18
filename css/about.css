@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wg-300{
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+}
+.wg-300 img{
+    width: 100%;
+    height: 100%;
+}
+.wg-700{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;  
+}
+ .w-full{
+    position: relative;
+
+    overflow: hidden;
+ }
+.b-img-container{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.b-img-container img{
+    width: 100%;
+   
+}
+.white-data{
+    width: 350px;
+    top: 40%;
+    left: 30px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.white-data h1{
+    font-size: 60px;
+    font-family: "Arima", system-ui;
+
+}
+.white-data p{
+    font-family: "Arima", system-ui;
+
+}
+.about-data span{
+    letter-spacing: 0.5cap;
+}
+.about-data h1{
+    font-size: 40px;
+    font-family: "Arima", system-ui;
+}
+
+.abt-pera
+{
+    width: 850px;
+}
+.abt-pera p{
+    font-family: "Arima", system-ui;
+    color: rgb(126, 121, 121);
+    text-align: center;
+    font-size: 19px;
+    word-spacing: 0.5cap;
+    padding-bottom: 40px;
+}
+.line
+{
+    height: 100px;
+    width: 1px;
+    background-color:#DF9F9F;
+  
+}
+.sign-text h1{
+    font-size: 25px;
+}
+.sign-text p{
+    font-family: "Arima", system-ui;
+    color: #DF9F9F;
+    font-size: 18px;
+
+}
+.sign img{
+    opacity: 0.5;
+}
+.vd-container
+{
+    width: 1140px;
+    margin: auto;
+    /* height: 100vh; */
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+  }
+.vd-img-con{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/banner2.webp");
+    background-clip: content-box;
+    background-attachment: fixed;
+}
+.vd-img-con::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    opacity: 0.2;
+}
+.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 300px;
+    left: 530px;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #fa183d; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: #DF9F9F;
+  }
+  .video-play-button:before {
+    content: "";
+    color: transparent;
+    /* position: absolute; */
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: darkgray;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button img {
+    /* position: relative; */
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  .video-overlay {
+    /* position: fixed; */
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.80);
+    opacity: 0;
+    transition: all ease 500ms;
+  }
+  
+  .video-overlay.open {
+    /* position: fixed; */
+    z-index: 1000;
+    opacity: 1;
+    top:500px;
+  }
+  
+  .video-overlay-close {
+    /* position: absolute; */
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #f1ad34;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  
+  .video-overlay-close:hover {
+    color: #ff4c60;
+    transform: scale(1.5);
+  }
+  
+  
+  /* ENTRANCE ANIMATION OF THE PLAY BUTTON */
+  
+  .video-play-button {
+      -webkit-animation: scale-up-center 1s cubic-bezier(0.680, -0.550, 0.280, 1.550) both;
+              animation: scale-up-center 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  .vd-mini-img1{
+    width: 300px;
+    position: absolute;
+    /* height: 100vh; */
+    padding: 20px;
+    background-color: white;
+    left: 70%;
+    top: 5%;
+  }
+  .vd-mini-img1 img{
+    width: 100%;
+  }
+
+  .vd-mini-img2{
+    width: 300px;
+    position: absolute;
+    /* height: 100vh; */
+    padding: 20px;
+    background-color: black;
+    left:10%;
+    top: 20%;
+  }
+  .vd-mini-img2 img{
+    width: 100%;
+  }
+  .Number h1{
+    font-size: 35px;
+    font-family: "Arima", system-ui;
+
+  }
+  .Number p{
+    font-family: "Arima", system-ui;
+    font-size: 18px;
+  }
+  .workSpace{
+    position: absolute;
+    top: 30%;
+    background-color:#f5f3f3;
+  }
+  .workSpace span{
+    color: #DF9F9F;
+    letter-spacing: 0.5ch;
+    font-weight: 600;
+    padding-top: 50px;
+  }
+  .workSpace h1{
+    font-family: "Arima", system-ui;
+    font-size: 50px;
+    padding-top: 10px;
+  }
+  .workIconContainer i{
+    font-size: 60px;
+  }
+  .div{
+    width:200px;
+    /* background-color: #f1ad34; */
+  }
+  .div h1{
+    font-size: 20px;
+  }
+ 
+.apt-text{
+  font-family: "Arima", system-ui;
+
+}
+
+.quote-sec{
+  width: 930px;
+  position: absolute;
+  background-color: rgba(56, 55, 55, 0.662);
+  top: 0px;
+  left: 25%;
+}
+.quote-sec span{
+  letter-spacing: 0.3cap;
+  color: #DF9F9F;
+  text-align: center;
+  font-weight: 600;
+ 
+}
+.quote-sec h1{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Arima", system-ui;
+
+}
+.qu-con h1{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Arima", system-ui;
+
+}
+.qu-con{
+  width: 500px;
+}
+.Team i{
+  color: #DF9F9F;
+}
+#tracking{
+  background-color: #DF9F9F;
+}
+.Team h1,p{
+  font-family: "Arima", system-ui;
+
+}
