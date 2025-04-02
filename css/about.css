@@ -284,9 +284,9 @@
     position: absolute;
     /* height: 100vh; */
     padding: 20px;
-    background-color: black;
+    background-color: white;
     left:10%;
-    top: 20%;
+    top:12%;
   }
   .vd-mini-img2 img{
     width: 100%;
